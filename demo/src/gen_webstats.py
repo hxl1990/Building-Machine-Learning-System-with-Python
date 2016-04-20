@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 sp.random.seed(3)  # to reproduce the data later on
 
 x = sp.arange(1, 31 * 24)
+print x;
 y = sp.array(200 * (sp.sin(2 * sp.pi * x / (7 * 24))), dtype=int)
 y += gamma.rvs(15, loc=0, scale=100, size=len(x))
 y += 2 * sp.exp(x / 100.0)
